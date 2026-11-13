@@ -1,0 +1,16 @@
+{
+  "id": "neo-brutalist", "name": "Neo-brutalist",
+  "description": "Thick black borders, flat bright blocks, raw type.",
+  "bestLength": "20s-3min", "footage": ["talking-head", "screen"],
+  "avoidWhen": "calm, premium, medical or emotional tone",
+  "tags": ["talking head", "short-form", "bold"],
+  "motif": "thick black borders, hard offset shadow, flat color blocks",
+  "exampleEffects": ["punch_in", "highlighter_swipe", "pop_captions"],
+  "look": {
+    "palette": { "bg": "#fff7d6", "text": "#111111", "accent": "#ff4d4d", "highlight": "#ffe14a" },
+    "fonts": { "heading": "Space Grotesk", "body": "Inter", "bengaliFallback": "Noto Sans Bengali" },
+    "captions": { "position": "bc", "size": 44, "uppercase": true, "wordsPerChunk": 4, "highlight": "box", "maxLines": 2 },
+    "cards": { "radius": 0, "shadow": true, "position": "right-wall" },
+    "motion": "snappy"
+  }
+}

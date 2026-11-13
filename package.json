@@ -1,0 +1,16 @@
+{
+  "name": "motionforge",
+  "private": true,
+  "version": "0.0.0",
+  "description": "MotionForge Studio: desktop chat-first video editor and generator",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "guard": "node scripts/no-fakes-check.mjs",
+    "validate-skills": "node scripts/validate-skills.mjs",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "check": "pnpm guard && pnpm validate-skills && pnpm typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}

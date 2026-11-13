@@ -1,0 +1,12 @@
+{
+  "id": "karaoke_captions", "name": "Karaoke captions", "group": "text",
+  "description": "Word-by-word highlighted captions in short chunks.",
+  "needs": ["transcript with word times"], "scope": ["whole"],
+  "params": {
+    "wordsPerChunk": { "type": "number", "min": 1, "max": 6, "default": 5, "step": 1 },
+    "highlight": { "type": "enum", "options": ["color", "box", "underline"], "default": "color" },
+    "uppercase": { "type": "boolean", "default": false },
+    "highlightColor": { "type": "color", "default": "#ffd84a" }
+  },
+  "safety": "captions stay inside the caption zone and never overlap the face zone"
+}

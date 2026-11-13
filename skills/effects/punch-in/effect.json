@@ -1,0 +1,11 @@
+{
+  "id": "punch_in", "name": "Punch-in zoom", "group": "emphasis",
+  "description": "Quick zoom toward the face on an emphasised word, then ease back.",
+  "needs": ["face zone"], "scope": ["moment", "clip"],
+  "params": {
+    "scale": { "type": "number", "min": 1.05, "max": 1.4, "default": 1.15, "step": 0.01 },
+    "duration": { "type": "number", "min": 0.3, "max": 3, "default": 1.2, "unit": "s" },
+    "anchor": { "type": "enum", "options": ["face", "center"], "default": "face" }
+  },
+  "safety": "keeps the face inside the frame; blocked if it pushes captions out of the safe zone"
+}

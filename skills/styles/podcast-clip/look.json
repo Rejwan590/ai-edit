@@ -1,0 +1,16 @@
+{
+  "id": "podcast-clip", "name": "Podcast clip",
+  "description": "Name tag, karaoke captions, waveform and progress bar.",
+  "bestLength": "30s-90s", "footage": ["talking-head", "audio"],
+  "avoidWhen": "visuals must carry the story",
+  "tags": ["talking head", "short-form", "audio-first"],
+  "motif": "waveform, progress bar, name tag",
+  "exampleEffects": ["karaoke_captions", "progress_bar", "lower_third"],
+  "look": {
+    "palette": { "bg": "#0b1020", "text": "#ffffff", "accent": "#3f6bff", "highlight": "#ffd84a" },
+    "fonts": { "heading": "Inter", "body": "Inter", "bengaliFallback": "Noto Sans Bengali" },
+    "captions": { "position": "bc", "size": 42, "uppercase": false, "wordsPerChunk": 5, "highlight": "color", "maxLines": 2 },
+    "cards": { "radius": 14, "shadow": true, "position": "lower-third" },
+    "motion": "calm"
+  }
+}
